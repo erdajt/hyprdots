@@ -1,0 +1,28 @@
+[global]
+  font = "Cascadia Code NF"
+  frame_color = "#89B4FA"
+  background = "#1E1E2E"
+  foreground = "#CDD6F4"
+  transparency = 20
+  padding = 12
+  horizontal_padding = 12
+  separator_color = "frame"
+  frame_width = 2  # Changed from border_size
+  corner_radius = 8
+
+  width = 300
+  height = 150
+  origin = top-right
+  offset = 0x0
+
+[urgency_low]
+  background = "#1E1E2E"
+  foreground = "#CDD6F4"
+
+[urgency_normal]
+  background = "#1E1E2E"
+  foreground = "#CDD6F4"
+
+[urgency_critical]
+  background = "#F38BA8"
+  foreground = "#1E1E2E"
