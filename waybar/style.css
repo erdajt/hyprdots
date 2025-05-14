@@ -68,7 +68,6 @@ window#waybar {
 }
 
 /* Fixed section */
-#battery,
 #cpu,
 #memory,
 #temperature,
@@ -81,7 +80,6 @@ window#waybar {
 }
 
 #clock:hover,
-#battery:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,

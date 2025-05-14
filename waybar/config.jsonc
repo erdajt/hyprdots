@@ -19,7 +19,6 @@
         "cpu",
         "memory",
         "temperature",
-        "battery"  // Only single battery
     ],
 
     "custom/arch": {
@@ -98,16 +97,4 @@
         "format-critical": " {temperatureC}",
         "format": " {temperatureC}°C"
     },
-
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]
-    }
 }
