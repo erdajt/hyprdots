@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Fallout-style LUKS password prompt for Arch Linux
+# Self-contained, does not require arch-install.hook
+
+run_hook() {
+  echo -e "\e[32m========================================\e[0m"
+  echo -e "\e[32m      FALLOUT BOOT SEQUENCE            \e[0m"
+  echo -e "\e[32m========================================\e[0m"
+}
+
+show_prompt() {
+    prompt="Enter LUKS passphrase: "
+    echo -ne "\e[32m$prompt\e[0m"
+    stty -echo
+    password=""
+    while IFS= read -r -n1 char; do
+        [[ $char == $'\0' || $char == $'\n' ]] && break
+        password="$password$char"
+        echo -n "●"
+    done
+    stty echo
+    echo
+    echo "$password"
+}
+
+build() {
+    # mkinitcpio calls this
+    run_hook
+    # mkinitcpio provides $1 as the encrypted device name
+    # unlock using entered password
+    pass=$(show_prompt)
+    cryptsetup open "$1" luksroot --key-file=<(echo -n "$pass")
+}
+
+# mkinitcpio expects functions named build and help
+help() {
+    echo "Fallout-style encrypt hook"
+}
