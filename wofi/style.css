@@ -1,43 +1,48 @@
+@define-color ef_bg0    #2b3339;
+@define-color ef_bg1    #323c41;
+@define-color ef_fg     #f0e9d2;
+@define-color ef_bd     #7a8478;
+@define-color ef_pink   #d699b6;
+@define-color ef_yellow #dbbc7f;
+
 window {
-    background-color: #1e1e2e;
-    border-radius: 8px;
-    border: 2px solid #313244;
+  background-color: @ef_bg0;
+  border-radius: 10px;
+  border: 2px solid @ef_bd;
+  color: @ef_fg;
 }
 
 #input {
-    margin: 2px;
-    padding: 4px;
-    border-radius: 4px;
-    border: none;
-    background-color: #313244;
-    color: #cdd6f4;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid @ef_bd;
+  background-color: @ef_bg1;
+  color: @ef_pink;
+  font-weight: bold;
 }
 
-#inner-box {
-  margin: 0px;
-}
-
-#outer-box {
-  margin: 0px;
-}
-
-#scroll {
-  margin: 0px;
-}
+#inner-box { margin: 0; }
+#outer-box { margin: 0; }
+#scroll    { margin: 0; }
 
 #text {
   margin: 2px;
-  color: #cdd6f4;
+  color: @ef_fg;
 }
 
 #entry {
-  padding: 2px;
-  margin: 0px;
-  border-radius: 4px;
+  padding: 4px;
+  margin: 2px 0;
+  border-radius: 6px;
+  color: @ef_fg;
 }
 
 #entry:selected {
-  background-color: #313244;
+  background-color: @ef_bg1;
+  color: @ef_pink;
+  border: 1px solid @ef_pink;
+  font-weight: bold;
 }
 
 #img {

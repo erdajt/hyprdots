@@ -1,13 +1,13 @@
 [global]
   font = "Cascadia Code NF"
-  frame_color = "#89B4FA"
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
+  frame_color = "#a7c080"
+  background = "#2b3339"
+  foreground = "#d3c6aa"
   transparency = 20
   padding = 12
   horizontal_padding = 12
   separator_color = "frame"
-  frame_width = 2  # Changed from border_size
+  frame_width = 2
   corner_radius = 8
 
   width = 300
@@ -16,13 +16,13 @@
   offset = 0x0
 
 [urgency_low]
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
+  background = "#2b3339"
+  foreground = "#d3c6aa"
 
 [urgency_normal]
-  background = "#1E1E2E"
-  foreground = "#CDD6F4"
+  background = "#2b3339"
+  foreground = "#d3c6aa"
 
 [urgency_critical]
-  background = "#F38BA8"
-  foreground = "#1E1E2E"
+  background = "#e67e80"
+  foreground = "#2b3339"

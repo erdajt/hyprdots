@@ -1,15 +1,27 @@
+@define-color ef_bg0  #1e2326;
+@define-color ef_bg1  #2b3339;
+@define-color ef_fg   #d3c6aa;
+@define-color ef_bd   #4b565c;
+@define-color ef_ac   #7fbbb3;
+
 window {
-    background-color: #282828;
-    color: #ebdbb2;
+    background-color: @ef_bg0;
+    color: @ef_fg;
     border-radius: 10px;
+    border: 1px solid @ef_bd;
 }
 
 #input {
-    background-color: #3c3836;
+    background-color: @ef_bg1;
+    color: @ef_fg;
     border: none;
     padding: 8px;
+    border-radius: 6px;
 }
 
 #entry:selected {
-    background-color: #458588;
+    background-color: @ef_bg1;
+    color: @ef_fg;
+    border-radius: 6px;
+    border: 1px solid @ef_ac;
 }
