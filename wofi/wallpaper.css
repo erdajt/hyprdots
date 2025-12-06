@@ -1,1 +1,8 @@
 @import url("./themes/active.css");
+
+#img {
+    min-width: 300px;
+    min-height: 169px;
+    border-radius: 8px;
+    margin: 4px;
+}
