@@ -1,5 +1,5 @@
 [colors.primary]
-background = "#191724"
+background = "#1f1d2e"
 foreground = "#e0def4"
 
 [colors.normal]
@@ -23,9 +23,9 @@ cyan    = "#ebbcba"
 white   = "#e0def4"
 
 [colors.cursor]
-cursor = "#eb6f92"
-text = "#191724"
+cursor = "#f4b8c6"
+text = "#1f1d2e"
 
 [colors.selection]
-background = "#1f1d2e"
+background = "#26233a"
 text = "#e0def4"
