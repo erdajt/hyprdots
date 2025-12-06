@@ -20,11 +20,7 @@ window#waybar {
     border: 2px solid rgba(196, 167, 231, 0.6);
 }
 
-#clock {
-    padding: 0 10px;
-    border-radius: 15px;
-    color: #f6c177;
-}
+#clock { padding: 0 10px; border-radius: 15px; color: #c4a7e7; }
 
 #workspaces button {
     background: transparent;
@@ -62,7 +58,7 @@ window#waybar {
 #temperature { color: #9ccfd8; padding: 0 10px; }
 #cpu { color: #e0def4; padding: 0 10px; }
 #network { color: #c4a7e7; padding: 0 10px; }
-#pulseaudio { color: #f6c177; padding: 0 10px; }
+#pulseaudio { color: #c4a7e7; padding: 0 10px; }
 #backlight { color: #e0def4; padding: 0 10px; }
 #language { color: #e0def4; padding: 0 10px; }
 #battery { color: #e0def4; padding: 0 10px; }
@@ -71,7 +67,7 @@ window#waybar {
 #idle_inhibitor { color: #e0def4; padding: 0 10px; }
 #custom-arch { color: #c4a7e7; padding: 0 10px; font-size: 22px; transition: color .3s; }
 
-#custom-arch:hover { color: #f6c177; }
-#battery.warning { color: #f6c177; }
+#custom-arch:hover { color: #9ccfd8; }
+#battery.warning { color: #e0def4; }
 #battery.critical { color: #eb6f92; }
 #battery.charging { color: #9ccfd8; }

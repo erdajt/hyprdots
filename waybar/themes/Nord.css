@@ -30,7 +30,7 @@ window#waybar {
     background: transparent;
     font-weight: 900;
     font-size: 13pt;
-    color: #d8dee9;
+    color: #e5e9f0;
     border: none;
     border-radius: 15px;
     padding: 0 5px;
@@ -41,29 +41,36 @@ window#waybar {
     color: #88c0d0;
 }
 
+#workspaces button.focused {
+    background: rgba(143, 188, 187, 0.25);
+    color: #e5e9f0;
+}
+
+#workspaces button.urgent {
+    background: rgba(191, 97, 106, 0.85);
+    color: #2e3440;
+}
+
 #workspaces button:hover {
-    background: #434c5e;
+    background: rgba(136, 192, 208, 0.2);
+    border: 1px solid rgba(136, 192, 208, 0.6);
     color: #e5e9f0;
 }
 
-#cpu,
-#memory,
-#temperature,
-#network,
-#pulseaudio,
-#idle_inhibitor {
-    padding: 0 10px;
-    border-radius: 15px;
-    background: transparent;
-    color: #e5e9f0;
-}
+#memory { color: #e5e9f0; padding: 0 10px; }
+#temperature { color: #88c0d0; padding: 0 10px; }
+#cpu { color: #a3be8c; padding: 0 10px; }
+#network { color: #88c0d0; padding: 0 10px; }
+#pulseaudio { color: #81a1c1; padding: 0 10px; }
+#backlight { color: #e5e9f0; padding: 0 10px; }
+#language { color: #e5e9f0; padding: 0 10px; }
+#battery { color: #e5e9f0; padding: 0 10px; }
+#custom-media { color: #e5e9f0; padding: 0 10px; }
+#tray { color: #e5e9f0; padding: 0 10px; }
+#idle_inhibitor { color: #e5e9f0; padding: 0 10px; }
+#custom-arch { color: #88c0d0; padding: 0 10px; font-size: 22px; transition: color .3s; }
+#custom-arch:hover { color: #b48ead; }
 
-#clock:hover,
-#cpu:hover,
-#memory:hover,
-#temperature:hover,
-#network:hover,
-#pulseaudio:hover,
-#idle_inhibitor:hover {
-    background: rgba(67, 76, 94, 0.9);
-}
+#battery.warning { color: #ebcb8b; }
+#battery.critical { color: #bf616a; }
+#battery.charging { color: #a3be8c; }

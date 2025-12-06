@@ -46,24 +46,19 @@ window#waybar {
     color: #8be9fd;
 }
 
-#cpu,
-#memory,
-#temperature,
-#network,
-#pulseaudio,
-#idle_inhibitor {
-    padding: 0 10px;
-    border-radius: 15px;
-    background: transparent;
-    color: #f8f8f2;
-}
-
-#clock:hover,
-#cpu:hover,
-#memory:hover,
-#temperature:hover,
-#network:hover,
-#pulseaudio:hover,
-#idle_inhibitor:hover {
-    background: rgba(68, 71, 90, 0.9);
-}
+#memory { color: #f8f8f2; padding: 0 10px; }
+#temperature { color: #ffb86c; padding: 0 10px; }
+#cpu { color: #50fa7b; padding: 0 10px; }
+#network { color: #8be9fd; padding: 0 10px; }
+#pulseaudio { color: #ff79c6; padding: 0 10px; }
+#backlight { color: #f8f8f2; padding: 0 10px; }
+#language { color: #f8f8f2; padding: 0 10px; }
+#battery { color: #f8f8f2; padding: 0 10px; }
+#custom-media { color: #f8f8f2; padding: 0 10px; }
+#tray { color: #f8f8f2; padding: 0 10px; }
+#idle_inhibitor { color: #f8f8f2; padding: 0 10px; }
+#custom-arch { color: #bd93f9; padding: 0 10px; font-size: 22px; transition: color .3s; }
+#custom-arch:hover { color: #ff79c6; }
+#battery.warning { color: #ffb86c; }
+#battery.critical { color: #ff5555; }
+#battery.charging { color: #50fa7b; }
