@@ -1,29 +1,30 @@
 window {
-    margin: 10px;
+    margin: 6px;
     border: 2px solid #7aa2f7;
-    background-color: rgba(26, 27, 38, 0.95);
-    color: #cdd6f4;
-    border-radius: 12px;
-}
-
-#input {
-    margin: 8px;
-    padding: 6px 10px;
-    background: #1a1b26;
+    background-color: #1a1b26;
     color: #cdd6f4;
     border-radius: 10px;
 }
 
+#input {
+    margin: 6px;
+    padding: 4px 8px;
+    background: #1f2335;
+    color: #cdd6f4;
+    border-radius: 8px;
+}
+
 #inner-box {
-    margin: 8px;
+    margin: 6px;
 }
 
 #entry {
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 #entry:selected {
     background: #2f334d;
     color: #c099ff;
+    border: 1px solid #7aa2f7;
 }
