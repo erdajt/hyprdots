@@ -1,0 +1,94 @@
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    transition: background-color .3s ease-out;
+}
+
+window#waybar {
+    background: rgba(30, 35, 38, 0.25); /* Everforest bg0_hard w/ transparency */
+    color: #d3c6aa; /* fg */
+    font-family: SpaceMono Nerd Font, feather;
+    border: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(30, 35, 38, 0.7); /* earthy overlay */
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 15px;
+    border: 2px solid rgba(167, 192, 128, 0.6);
+}
+
+.modules-left {
+    padding: 0;
+}
+
+.modules-center {
+    padding: 0 10px;
+    background: rgba(30, 35, 38, 0.7);
+}
+
+#clock {
+    padding: 0 10px;
+    border-radius: 15px;
+    font-weight: normal;
+    color: rgba(167, 192, 128, 1);
+}
+
+#workspaces button {
+    background: transparent;
+    font-family: SpaceMono Nerd Font, feather;
+    font-weight: 900;
+    font-size: 13pt;
+    color: #a7c080; /* Everforest green */
+    border: none;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    background: #1e2326;
+    color: #d699b6;
+}
+
+#workspaces button:hover {
+    background: #323c41; /* lighter bg */
+    color: #d3c6aa; /* foreground */
+}
+
+#custom-arch {
+    margin-left: 5px;
+    padding: 0 10px;
+    font-size: 25px;
+    color: #a7c080; /* green accent */
+    transition: color .5s;
+}
+
+#custom-arch:hover {
+    color: #7fbbb3; /* teal highlight */
+}
+
+/* Fixed section */
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#idle_inhibitor {
+    padding: 0 10px;
+    border-radius: 15px;
+    background: transparent;
+    color: #d3c6aa;
+}
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#idle_inhibitor:hover {
+    background: rgba(43, 51, 57, 0.9); /* Everforest bg1 hover */
+}

@@ -1,0 +1,29 @@
+window {
+    margin: 10px;
+    border: 2px solid #88c0d0;
+    background-color: rgba(46, 52, 64, 0.95);
+    color: #e5e9f0;
+    border-radius: 12px;
+}
+
+#input {
+    margin: 8px;
+    padding: 6px 10px;
+    background: #3b4252;
+    color: #e5e9f0;
+    border-radius: 10px;
+}
+
+#inner-box {
+    margin: 8px;
+}
+
+#entry {
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+#entry:selected {
+    background: #434c5e;
+    color: #88c0d0;
+}

@@ -1,10 +1,77 @@
-@define-color bar-bg rgba(0, 0, 0, 0);
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    transition: background-color .3s ease-out;
+}
 
-@define-color main-bg #26233a;
-@define-color main-fg #ebbcba;
+window#waybar {
+    background: rgba(25, 23, 36, 0.25);
+    color: #e0def4;
+    border: none;
+}
 
-@define-color wb-act-bg #31748f;
-@define-color wb-act-fg #9ccfd8;
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(31, 29, 46, 0.7);
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 15px;
+    border: 2px solid rgba(196, 167, 231, 0.6);
+}
 
-@define-color wb-hvr-bg #eb6f92;
-@define-color wb-hvr-fg #f6c177;
+#clock {
+    padding: 0 10px;
+    border-radius: 15px;
+    color: #f6c177;
+}
+
+#workspaces button {
+    background: transparent;
+    font-weight: 900;
+    font-size: 13pt;
+    color: #e0def4;
+    border: none;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    background: #1f1d2e;
+    color: #c4a7e7;
+}
+
+#workspaces button.focused {
+    background: rgba(196, 167, 231, 0.3);
+    color: #e0def4;
+}
+
+#workspaces button.urgent {
+    background: rgba(235, 111, 146, 0.8);
+    color: #191724;
+}
+
+#workspaces button:hover {
+    background: rgba(196, 167, 231, 0.2);
+    border: 1px solid rgba(196, 167, 231, 0.6);
+    color: #e0def4;
+}
+
+/* Modules */
+#memory { color: #f2e9e6; padding: 0 10px; }
+#temperature { color: #9ccfd8; padding: 0 10px; }
+#cpu { color: #e0def4; padding: 0 10px; }
+#network { color: #c4a7e7; padding: 0 10px; }
+#pulseaudio { color: #f6c177; padding: 0 10px; }
+#backlight { color: #e0def4; padding: 0 10px; }
+#language { color: #e0def4; padding: 0 10px; }
+#battery { color: #e0def4; padding: 0 10px; }
+#custom-media { color: #e0def4; padding: 0 10px; }
+#tray { color: #e0def4; padding: 0 10px; }
+#idle_inhibitor { color: #e0def4; padding: 0 10px; }
+#custom-arch { color: #c4a7e7; padding: 0 10px; font-size: 22px; transition: color .3s; }
+
+#custom-arch:hover { color: #f6c177; }
+#battery.warning { color: #f6c177; }
+#battery.critical { color: #eb6f92; }
+#battery.charging { color: #9ccfd8; }

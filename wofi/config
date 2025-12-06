@@ -2,3 +2,4 @@ width = 600
 height = 400
 prompt = "Launch"
 show = drun
+style = ~/.config/wofi/style.css

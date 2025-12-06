@@ -1,0 +1,69 @@
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    transition: background-color .3s ease-out;
+}
+
+window#waybar {
+    background: rgba(46, 52, 64, 0.25);
+    color: #e5e9f0;
+    border: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(46, 52, 64, 0.7);
+    margin: 5px 10px;
+    padding: 0 5px;
+    border-radius: 15px;
+    border: 2px solid rgba(136, 192, 208, 0.6);
+}
+
+#clock {
+    padding: 0 10px;
+    border-radius: 15px;
+    color: #88c0d0;
+}
+
+#workspaces button {
+    background: transparent;
+    font-weight: 900;
+    font-size: 13pt;
+    color: #d8dee9;
+    border: none;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    background: #3b4252;
+    color: #88c0d0;
+}
+
+#workspaces button:hover {
+    background: #434c5e;
+    color: #e5e9f0;
+}
+
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#idle_inhibitor {
+    padding: 0 10px;
+    border-radius: 15px;
+    background: transparent;
+    color: #e5e9f0;
+}
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#idle_inhibitor:hover {
+    background: rgba(67, 76, 94, 0.9);
+}

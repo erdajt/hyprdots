@@ -11,6 +11,8 @@
 
 window#waybar {
     background: @bar-bg;
+    width: 50%;
+    margin-left: 0;
 }
 
 tooltip {
