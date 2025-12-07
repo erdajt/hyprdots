@@ -50,9 +50,9 @@ save_to_clipboard = true
 [[keyboard.bindings]]
 key = "A"
 mods = "Super|Shift"
-command = { program = "/home/erdajtt/.config/alacritty/opacity.sh", args = ["-"] }
+command = { program = "$HOME/.config/alacritty/opacity.sh", args = ["-"] }
 
 [[keyboard.bindings]]
 key = "D"
 mods = "Super|Shift"
-command = { program = "/home/erdajtt/.config/alacritty/opacity.sh", args = ["+"] }
+command = { program = "$HOME/.config/alacritty/opacity.sh", args = ["+"] }
