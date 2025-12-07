@@ -2,9 +2,9 @@
 
 # Hyprdots
 
-*A meticulously crafted Hyprland rice where every pixel adapts to your mood*
+*Hyprland rice with seamless theme switching*
 
-Seamless theme switching across your entire desktop. One command transforms window borders, status bars, terminals, notifications, and even your browser.
+One command transforms your entire desktop: window borders, status bars, terminals, notifications, and browser.
 
 [Features](#features) • [Themes](#themes) • [Installation](#installation) • [Usage](#usage)
 
@@ -14,168 +14,33 @@ Seamless theme switching across your entire desktop. One command transforms wind
 
 ## Themes
 
-<div align="center">
-
 ### Rose Pine
-*Soft, muted tones with warm accents*
-
-<table>
-<tr>
-<td width="50%">
-
-![Rose Pine](screenshots/rose-pine/theme.png)
-
-</td>
-<td width="50%">
-
-![Rose Pine Details](screenshots/rose-pine/theme2.png)
-
-</td>
-</tr>
-</table>
-
-A gentle, low-contrast palette inspired by the Rosé Pine color scheme. Features a moon-like terminal background with subtle pink cursor highlights and purple-teal waybar accents.
-
----
+Soft muted palette with warm accents. Moon-like terminal background with pink cursor highlights and purple-teal waybar.
 
 ### Nord
-*Arctic, frost-inspired elegance*
-
-<table>
-<tr>
-<td width="50%">
-
-![Nord](screenshots/nord/theme.png)
-
-</td>
-<td width="50%">
-
-![Nord Details](screenshots/nord/theme2.png)
-
-</td>
-</tr>
-</table>
-
-Clean, crisp colors drawn from the frozen north. Cooler tones throughout with ice-blue highlights and excellent readability in any lighting condition.
-
----
+Arctic frost-inspired colors. Clean ice-blue highlights with excellent readability.
 
 ### Tokyo Dracula
-*Cyberpunk meets vampiric aesthetics*
-
-<table>
-<tr>
-<td width="50%">
-
-![Tokyo Dracula](screenshots/tokyo-dracula/theme.png)
-
-</td>
-<td width="50%">
-
-![Tokyo Dracula Details](screenshots/tokyo-dracula/theme2.png)
-
-</td>
-</tr>
-</table>
-
-A fusion of Tokyo Night's neon vibes and Dracula's purple-pink palette. Perfect for late-night coding sessions with rich purples and electric accents.
-
----
+Fusion of Tokyo Night neon vibes and Dracula purple-pink palette. Rich purples with electric accents.
 
 ### Everforest
-*Natural, forest-inspired calm*
-
-<table>
-<tr>
-<td width="50%">
-
-![Everforest](screenshots/everforest/theme.png)
-
-</td>
-<td width="50%">
-
-![Everforest Details](screenshots/everforest/theme2.png)
-
-</td>
-</tr>
-</table>
-
-The default theme. Warm greens and earthy tones that are easy on the eyes. Designed for comfortable long-term use with excellent contrast.
-
----
+Natural forest-inspired calm. Warm greens and earthy tones, easy on the eyes. **Default theme.**
 
 ### Catppuccin Mocha
-*Smooth, pastel sophistication*
-
-<table>
-<tr>
-<td width="50%">
-
-![Catppuccin](screenshots/catppuccin/theme.png)
-
-</td>
-<td width="50%">
-
-![Catppuccin Details](screenshots/catppuccin/theme2.png)
-
-</td>
-</tr>
-</table>
-
-Soothing pastel colors with a dark mocha background. Trendy yet timeless with carefully balanced accent colors.
-
----
+Soothing pastel colors with dark mocha background. Balanced accent colors.
 
 ### Tokyo Night
-*Neon-lit streets after dark*
-
-<table>
-<tr>
-<td width="50%">
-
-![Tokyo Night](screenshots/tokyonight/theme.png)
-
-</td>
-<td width="50%">
-
-![Tokyo Night Details](screenshots/tokyonight/theme2.png)
-
-</td>
-</tr>
-</table>
-
-Deep blues and purples with vibrant highlights. Inspired by Tokyo's night skyline with modern, sleek aesthetics.
-
----
+Deep blues and purples with vibrant highlights. Sleek modern aesthetics.
 
 ### Dracula
-*Classic vampire elegance*
-
-<table>
-<tr>
-<td width="50%">
-
-![Dracula](screenshots/dracula/theme.png)
-
-</td>
-<td width="50%">
-
-![Dracula Details](screenshots/dracula/theme2.png)
-
-</td>
-</tr>
-</table>
-
-The beloved dark theme with purple backgrounds and pink-cyan accents. High contrast and instantly recognizable.
-
-</div>
+Classic dark theme with purple backgrounds and pink-cyan accents. High contrast.
 
 ---
 
 ## Features
 
 ### Unified Theme System
-One command switches everything. No manual edits, no restart loops, no inconsistencies.
+One command switches everything. No manual edits, no restarts.
 
 **What changes:**
 - Hyprland window borders and decorations
@@ -189,10 +54,10 @@ One command switches everything. No manual edits, no restart loops, no inconsist
 **What persists:**
 - Per-theme wallpaper memory
 - Theme state across reboots
-- All Neovim themes remain available regardless of system theme
+- All Neovim themes remain available
 
 ### Wallpaper Management
-Each theme remembers your last wallpaper choice. Switch back to Rose Pine and your curated wallpaper is already set.
+Each theme remembers your last wallpaper. Switch back to Rose Pine and your wallpaper is already set.
 
 ```
 ~/Wallpapers/           Shared across all themes
@@ -201,13 +66,13 @@ Each theme remembers your last wallpaper choice. Switch back to Rose Pine and yo
 ~/Wallpapers/tokyonight/Tokyo Night exclusives
 ```
 
-The wallpaper picker shows theme-specific wallpapers first, then falls back to the shared collection.
+Theme wallpapers appear first in the picker, then shared wallpapers.
 
 ### Notification Theming
-Dunst notifications adapt to your active theme with matching colors and follow your mouse across monitors.
+Dunst notifications match your active theme and follow your mouse across monitors.
 
 ### Launcher & Pickers
-Wofi menus are fully themed with solid backgrounds, readable text, and consistent spacing. No transparency issues, no white flashes.
+Wofi menus fully themed with solid backgrounds and consistent spacing.
 
 ---
 
@@ -265,12 +130,12 @@ Set default theme:
 ```bash
 ~/.config/hypr/scripts/wallpicker.sh
 ```
-Theme wallpapers appear first, then shared wallpapers. Your choice is remembered per theme.
+Theme wallpapers first, then shared. Choice remembered per theme.
 
 ### Neovim Integration
-Your system theme sets the Neovim default via `~/.config/nvim/.theme`, but all installed themes remain accessible.
+System theme sets the Neovim default via `~/.config/nvim/.theme`. All themes remain accessible.
 
-**Manual theme switch:**
+**Manual switch:**
 ```vim
 :colorscheme catppuccin-mocha
 :colorscheme rose-pine
@@ -284,7 +149,7 @@ Your system theme sets the Neovim default via `~/.config/nvim/.theme`, but all i
 
 ## Customization
 
-### Adding a New Theme
+### Adding a Theme
 
 1. `~/.config/hypr/themes/<theme-name>.conf` - Window border colors
 2. `~/.config/waybar/themes/<theme-name>.css` - Status bar styling
@@ -293,7 +158,7 @@ Your system theme sets the Neovim default via `~/.config/nvim/.theme`, but all i
 5. `~/.config/dunst/themes/<theme-name>.conf` - Notification colors
 6. `~/Wallpapers/<theme-name>/` - Theme wallpapers
 
-Add your theme to the picker in `theme-toggle.sh`.
+Add to picker in `theme-toggle.sh`.
 
 ### Keybinds
 Edit `~/.config/hypr/keybinds.conf`:
@@ -332,8 +197,6 @@ hyprdots/
 <div align="center">
 
 ## Credits
-
-Built for a seamless, performant, and beautiful Hyprland experience.
 
 **Themes** • [Everforest](https://github.com/sainnhe/everforest) • [Rose Pine](https://rosepinetheme.com/) • [Nord](https://www.nordtheme.com/) • [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) • [Dracula](https://draculatheme.com/) • [Catppuccin](https://github.com/catppuccin/catppuccin)
 
