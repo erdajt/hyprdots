@@ -32,8 +32,12 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 remindme() {
   notify-send "$@"
 }
+alias cewl="~/htb/tools/CeWL/cewl.rb"
 
-# go
+# goenv
+export GOPATH="${GOPATH:-$HOME/go}"
+export GOBIN="${GOBIN:-$GOPATH/bin}"
+export PATH="$GOBIN:$PATH"
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
 
@@ -46,14 +50,21 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 
-# other
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-export EDITOR='nvim'
 
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
-
 eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.local/bin:$PATH"
+
+# nvidia
+export WLR_NO_HARDWARE_CURSORS=1
+export GBM_BACKEND=nvidia-drm
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export LIBVA_DRIVER_NAME=nvidia
+export PATH="$HOME/.local/bin:$PATH"
