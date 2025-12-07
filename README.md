@@ -221,18 +221,18 @@ hyprland waybar alacritty wofi dunst firefox neovim imagemagick
 ### Setup
 ```bash
 cd ~
-git clone <your-repo-url> P9/dump/hyprdots
+git clone https://github.com/erdajt/hyprdots
 
 cd ~/.config
-ln -sf ~/P9/dump/hyprdots/hypr hypr
-ln -sf ~/P9/dump/hyprdots/waybar waybar
-ln -sf ~/P9/dump/hyprdots/alacritty alacritty
-ln -sf ~/P9/dump/hyprdots/wofi wofi
-ln -sf ~/P9/dump/hyprdots/dunst dunst
-ln -sf ~/P9/dump/hyprdots/.zshrc ~/.zshrc
+ln -sf ~/hyprdots/hypr hypr
+ln -sf ~/hyprdots/waybar waybar
+ln -sf ~/hyprdots/alacritty alacritty
+ln -sf ~/hyprdots/wofi wofi
+ln -sf ~/hyprdots/dunst dunst
+ln -sf ~/hyprdots/.zshrc ~/.zshrc
 
 mkdir -p ~/Wallpapers/{rose-pine,nord,tokyonight,everforest,catppuccin,dracula,tokyo-dracula}
-rsync -av ~/P9/dump/hyprdots/Wallpapers/ ~/Wallpapers/
+rsync -av ~/hyprdots/Wallpapers/ ~/Wallpapers/
 ```
 
 Set default theme:
