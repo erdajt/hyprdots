@@ -14,26 +14,161 @@ One command transforms your entire desktop: window borders, status bars, termina
 
 ## Themes
 
+<div align="center">
+
 ### Rose Pine
-Soft muted palette with warm accents. Moon-like terminal background with pink cursor highlights and purple-teal waybar.
+*Soft muted palette with warm accents*
+
+<table>
+<tr>
+<td width="50%">
+
+![Rose Pine](screenshots/rose-pine/theme.png)
+
+</td>
+<td width="50%">
+
+![Rose Pine Details](screenshots/rose-pine/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Moon-like terminal background with pink cursor highlights and purple-teal waybar.
+
+---
 
 ### Nord
-Arctic frost-inspired colors. Clean ice-blue highlights with excellent readability.
+*Arctic frost-inspired colors*
+
+<table>
+<tr>
+<td width="50%">
+
+![Nord](screenshots/nord/theme.png)
+
+</td>
+<td width="50%">
+
+![Nord Details](screenshots/nord/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Clean ice-blue highlights with excellent readability.
+
+---
 
 ### Tokyo Dracula
-Fusion of Tokyo Night neon vibes and Dracula purple-pink palette. Rich purples with electric accents.
+*Fusion of neon vibes and vampiric aesthetics*
+
+<table>
+<tr>
+<td width="50%">
+
+![Tokyo Dracula](screenshots/tokyo-dracula/theme.png)
+
+</td>
+<td width="50%">
+
+![Tokyo Dracula Details](screenshots/tokyo-dracula/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Rich purples with electric accents for late-night sessions.
+
+---
 
 ### Everforest
-Natural forest-inspired calm. Warm greens and earthy tones, easy on the eyes. **Default theme.**
+*Natural forest-inspired calm*
+
+<table>
+<tr>
+<td width="50%">
+
+![Everforest](screenshots/everforest/theme.png)
+
+</td>
+<td width="50%">
+
+![Everforest Details](screenshots/everforest/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Warm greens and earthy tones, easy on the eyes. **Default theme.**
+
+---
 
 ### Catppuccin Mocha
-Soothing pastel colors with dark mocha background. Balanced accent colors.
+*Soothing pastel sophistication*
+
+<table>
+<tr>
+<td width="50%">
+
+![Catppuccin](screenshots/catppuccin/theme.png)
+
+</td>
+<td width="50%">
+
+![Catppuccin Details](screenshots/catppuccin/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Dark mocha background with balanced accent colors.
+
+---
 
 ### Tokyo Night
-Deep blues and purples with vibrant highlights. Sleek modern aesthetics.
+*Neon-lit streets after dark*
+
+<table>
+<tr>
+<td width="50%">
+
+![Tokyo Night](screenshots/tokyonight/theme.png)
+
+</td>
+<td width="50%">
+
+![Tokyo Night Details](screenshots/tokyonight/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Deep blues and purples with vibrant highlights.
+
+---
 
 ### Dracula
-Classic dark theme with purple backgrounds and pink-cyan accents. High contrast.
+*Classic vampire elegance*
+
+<table>
+<tr>
+<td width="50%">
+
+![Dracula](screenshots/dracula/theme.png)
+
+</td>
+<td width="50%">
+
+![Dracula Details](screenshots/dracula/theme2.png)
+
+</td>
+</tr>
+</table>
+
+Purple backgrounds with pink-cyan accents. High contrast.
+
+</div>
 
 ---
 
