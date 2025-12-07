@@ -174,7 +174,7 @@ The beloved dark theme with purple backgrounds and pink-cyan accents. High contr
 
 ## Features
 
-### 🎨 Unified Theme System
+### Unified Theme System
 One command switches everything. No manual edits, no restart loops, no inconsistencies.
 
 **What changes:**
@@ -191,7 +191,7 @@ One command switches everything. No manual edits, no restart loops, no inconsist
 - Theme state across reboots
 - All Neovim themes remain available regardless of system theme
 
-### 🖼️ Wallpaper Management
+### Wallpaper Management
 Each theme remembers your last wallpaper choice. Switch back to Rose Pine and your curated wallpaper is already set.
 
 ```
@@ -203,10 +203,10 @@ Each theme remembers your last wallpaper choice. Switch back to Rose Pine and yo
 
 The wallpaper picker shows theme-specific wallpapers first, then falls back to the shared collection.
 
-### 🔔 Notification Theming
+### Notification Theming
 Dunst notifications adapt to your active theme with matching colors and follow your mouse across monitors.
 
-### 🚀 Launcher & Pickers
+### Launcher & Pickers
 Wofi menus are fully themed with solid backgrounds, readable text, and consistent spacing. No transparency issues, no white flashes.
 
 ---
